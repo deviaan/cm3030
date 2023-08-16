@@ -69,14 +69,20 @@ public class EnemyMovement : MonoBehaviour
 		// Move the enemy
 		rb.velocity = new Vector2(direction.normalized.x * speed, rb.velocity.y);
 
-		// Flip enemy based on direction
+		// Flip enemy based on direction and set animation
 		if (direction.x < 0)
 		{
-			transform.localScale = new Vector3(-1, 1, 1);
+			animator.SetBool("isWalking", true);
+			transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
 		else if (direction.x > 0)
 		{
-			transform.localScale = new Vector3(1, 1, 1);
+			animator.SetBool("isWalking", true);
+			transform.localRotation = Quaternion.Euler(0, 0, 0);
+		}
+		else
+		{
+			animator.SetBool("isWalking", false);
 		}
 
 	}

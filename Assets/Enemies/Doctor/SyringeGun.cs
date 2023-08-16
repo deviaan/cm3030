@@ -8,12 +8,14 @@ public class SyringeGun : MonoBehaviour
 	private GameObject player;
 	float timer;
 	public float shootInterval = 1.5f;
+	private Animator animator;
 	private EnemyMovement enemyMovement;
 
 	public GameObject syringePrefab;
 
 	void Start()
 	{
+		animator = GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		enemyMovement = GetComponent<EnemyMovement>();
 	}
@@ -36,6 +38,7 @@ public class SyringeGun : MonoBehaviour
 
 	void Shoot()
 	{
+		animator.SetTrigger("Shoot");
 		Instantiate(syringePrefab, syringeSpawnPoint.position, syringeSpawnPoint.rotation);
 	}
 }

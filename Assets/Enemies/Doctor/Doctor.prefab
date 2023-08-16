@@ -81,7 +81,6 @@ MonoBehaviour:
   speed: 2
   pointA: {fileID: 924191504391690879}
   pointB: {fileID: 8184829248914036281}
-  player: {fileID: 0}
   attackRange: 3
   visibilityRange: 10
 --- !u!114 &7098085169621518945
@@ -97,7 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   syringeSpawnPoint: {fileID: 129155375296033543}
-  player: {fileID: 0}
   shootInterval: 1.5
   syringePrefab: {fileID: 7842990566343718633, guid: a76bb7f80ac0b4d399ae0c91ce68374f,
     type: 3}
@@ -279,7 +277,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8394105580633915540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -0.06, z: 0}
+  m_LocalPosition: {x: 0.5, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7588044803202236692}

@@ -5,16 +5,17 @@ using UnityEngine;
 public class Syringe : MonoBehaviour
 {
 	public float speed = 5f;
-	private Rigidbody rb;
+	private Rigidbody2D rb;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-		rb = GetComponent<Rigidbody>();
-        rb.velocity = transform.forward * speed;
-    }
+	// Start is called before the first frame update
+	void Start()
+	{
+		rb = GetComponent<Rigidbody2D>();
+		rb.velocity = transform.right * speed;
+	}
 
-	void OnTriggerEnter(Collider hitInfo) {
+	void OnTriggerEnter(Collider hitInfo)
+	{
 		Debug.Log(hitInfo.name);
 		Destroy(gameObject);
 	}
