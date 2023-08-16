@@ -8,8 +8,9 @@ public class EnemyMovement : MonoBehaviour
 	public GameObject pointA;
 	public GameObject pointB;
 	private Transform target;
-	public GameObject player;
-	private Rigidbody rb;
+	private GameObject player;
+	private Rigidbody2D rb;
+	private Animator animator;
 
 	public float attackRange = 1.5f;
 	public float visibilityRange = 10f;
@@ -17,9 +18,12 @@ public class EnemyMovement : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		rb = GetComponent<Rigidbody>();
+		animator = GetComponent<Animator>();
+		rb = GetComponent<Rigidbody2D>();
+		player = GameObject.FindGameObjectWithTag("Player");
 		// Set the target to pointA
 		target = pointB.transform;
+		animator.SetBool("isWalking", true);
 	}
 
 	// Update is called once per frame
@@ -27,22 +31,22 @@ public class EnemyMovement : MonoBehaviour
 	{
 		// Get the distance between the player and the enemy
 		Vector3 playerDirection = player.transform.position - transform.position;
-		// If the enemy is close enough to the player, follow the player
 
-		if (playerDirection.magnitude < attackRange) {
+		// If the enemy is close enough to the player, follow the player
+		if (playerDirection.magnitude < attackRange)
+		{
 			// TODO: Enable attack
-			rb.velocity = Vector3.zero;
+			Move(Vector3.zero);
 		}
 		else if (playerDirection.magnitude < visibilityRange)
 		{
 			// Move the enemy towards the player
-			transform.LookAt(player.transform);
-
-			rb.velocity = transform.forward * (speed * 1.5f);
+			Move(playerDirection);
 		}
 		else
 		{
 			Vector3 direction = target.position - transform.position;
+
 			// If the enemy is close enough to the target, switch targets
 			if (direction.magnitude < 0.5f)
 			{
@@ -55,11 +59,25 @@ public class EnemyMovement : MonoBehaviour
 					target = pointA.transform;
 				}
 			}
-			transform.LookAt(target);
 
-			rb.velocity = transform.forward * speed;
+			Move(direction);
 		}
+	}
 
+	private void Move(Vector3 direction)
+	{
+		// Move the enemy
+		rb.velocity = new Vector2(direction.normalized.x * speed, rb.velocity.y);
+
+		// Flip enemy based on direction
+		if (direction.x < 0)
+		{
+			transform.localScale = new Vector3(-1, 1, 1);
+		}
+		else if (direction.x > 0)
+		{
+			transform.localScale = new Vector3(1, 1, 1);
+		}
 
 	}
 }
