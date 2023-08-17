@@ -80,7 +80,7 @@ MonoBehaviour:
   speed: 2
   pointA: {fileID: 2098270198398438497}
   pointB: {fileID: 6605580934360720149}
-  attackRange: 1
+  attackRange: 0.5
   visibilityRange: 10
 --- !u!212 &3120183969628703532
 SpriteRenderer:

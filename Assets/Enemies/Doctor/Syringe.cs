@@ -14,7 +14,7 @@ public class Syringe : MonoBehaviour
 		rb.velocity = transform.right * speed;
 	}
 
-	void OnTriggerEnter(Collider hitInfo)
+	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
 		Debug.Log(hitInfo.name);
 		Destroy(gameObject);
