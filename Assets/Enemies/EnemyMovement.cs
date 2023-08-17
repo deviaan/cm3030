@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour
 	public float attackRange = 1.5f;
 	public float visibilityRange = 10f;
 
+
 	// Start is called before the first frame update
 	void Start()
 	{

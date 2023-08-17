@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 5f07eb7babc4b4678ab734de52af1244
+guid: ce21b8416e23440db928cde4dfa85f90
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
+      213: 3496671922872121163
+    second: Biker_run_0
   - first:
-      213: -7385789195546760866
-    second: Idle_1
+      213: 7648308178042834202
+    second: Biker_run_1
   - first:
-      213: 3234629978573100161
-    second: Idle_2
+      213: 1245917158407749463
+    second: Biker_run_2
   - first:
-      213: 6373048116405451881
-    second: Idle_3
+      213: -2043169631834463640
+    second: Biker_run_3
+  - first:
+      213: 6227728036163401597
+    second: Biker_run_4
+  - first:
+      213: -6004705722312137723
+    second: Biker_run_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Idle_0
+      name: Biker_run_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
+      spriteID: b47ffd2769ca68030800000000000000
+      internalID: 3496671922872121163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_1
+      name: Biker_run_1
       rect:
         serializedVersion: 2
         x: 48
@@ -134,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e596485bbd7608990800000000000000
-      internalID: -7385789195546760866
+      spriteID: a1d45f4f3cf342a60800000000000000
+      internalID: 7648308178042834202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_2
+      name: Biker_run_2
       rect:
         serializedVersion: 2
         x: 96
@@ -155,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184dda4e3d6b3ec20800000000000000
-      internalID: 3234629978573100161
+      spriteID: 75f357eed036a4110800000000000000
+      internalID: 1245917158407749463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle_3
+      name: Biker_run_3
       rect:
         serializedVersion: 2
         x: 144
@@ -176,8 +182,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96cb1dafe7d917850800000000000000
-      internalID: 6373048116405451881
+      spriteID: 86224a68b0435a3e0800000000000000
+      internalID: -2043169631834463640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biker_run_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77b24927a55d6650800000000000000
+      internalID: 6227728036163401597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Biker_run_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50464d8b5fffaaca0800000000000000
+      internalID: -6004705722312137723
       vertices: []
       indices: 
       edges: []
