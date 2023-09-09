@@ -178,7 +178,7 @@ public class PlayerMovement : MonoBehaviour
     
     private bool _coyoteUsable;
     private bool _endedJumpEarly = true;
-    private float _apexPoint; 
+    private float _apexPoint;
     private float _lastJumpPressed;
     private bool CanUseCoyote => _coyoteUsable && !_colDown && _timeLeftGrounded + coyoteTimeThreshold > Time.time;
     private bool HasBufferedJump => _colDown && _lastJumpPressed + jumpBuffer > Time.time;
@@ -202,7 +202,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Button is pressed");
             _jumpButtonState = JumpButtonState.Pressed;
-        } else if (context.canceled && _jumpButtonState == JumpButtonState.Pressed)
+            _lastJumpPressed = Time.time;
+        } else if (context.canceled)
         {
             Debug.Log("Button released");
             _jumpButtonState = JumpButtonState.Released;
@@ -222,14 +223,16 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             JumpingThisFrame = false;
-            _jumpButtonState = JumpButtonState.Neutral;
         }
         
         // End jump early
-        if (_jumpButtonState == JumpButtonState.Released && !_endedJumpEarly && Velocity.y > 0)
+        if (!_colDown && _jumpButtonState == JumpButtonState.Released && !_endedJumpEarly && Velocity.y > 0)
         {
             _endedJumpEarly = true;
         }
+        
+        // Reset button state
+        if (_jumpButtonState == JumpButtonState.Released) _jumpButtonState = JumpButtonState.Neutral;
 
         if (_colUp && _currentVerticalSpeed > 0) _currentVerticalSpeed = 0;
     }
