@@ -63,6 +63,20 @@ public class EnemyMovement : MonoBehaviour
 
 			Move(direction);
 		}
+
+		if (playerDirection.magnitude < visibilityRange)
+		{
+			// flip to view player at all times if visible
+			if (playerDirection.x < 0)
+			{
+				transform.localRotation = Quaternion.Euler(0, 180, 0);
+			}
+			else if (playerDirection.x > 0)
+			{
+				transform.localRotation = Quaternion.Euler(0, 0, 0);
+			}
+		}
+
 	}
 
 	private void Move(Vector3 direction)
