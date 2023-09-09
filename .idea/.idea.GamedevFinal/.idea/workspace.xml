@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="Update movement system; wip: update jumping">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1691712700725" duration="2676000" />
       <workItem from="1693866837101" duration="117000" />
       <workItem from="1694135518445" duration="11000" />
-      <workItem from="1694135545570" duration="16350000" />
+      <workItem from="1694135545570" duration="17581000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
