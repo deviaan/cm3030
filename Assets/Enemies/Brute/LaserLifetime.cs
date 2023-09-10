@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserLifetime : MonoBehaviour
 {
-	public float lifetime = 1f;
+	public float lifetime = 0.2f;
 
 	// Update is called once per frame
 	void Update()

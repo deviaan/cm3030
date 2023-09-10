@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9864214b921d445bf82b54eeb0850087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootInterval: 3
+  shootInterval: 5
   laserSpawnPoint: {fileID: 7586390295108612393}
   laserPrefab: {fileID: 581478241763707326, guid: 1928a4359c4204f26b5fc1f1514368fe,
     type: 3}
