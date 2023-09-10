@@ -1,4 +1,4 @@
-﻿// Adapted from : https://github.com/Matthew-J-Spencer/Ultimate-2D-Controller/blob/main/Scripts/PlayerController.cs
+// Adapted from : https://github.com/Matthew-J-Spencer/Ultimate-2D-Controller/blob/main/Scripts/PlayerController.cs
 // https://www.youtube.com/watch?v=3sWTzMsmdx8
 
 using System;
