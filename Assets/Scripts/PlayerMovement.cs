@@ -108,7 +108,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("WALKING")] [SerializeField] private float acceleration = 90;
     [SerializeField] private float moveClamp = 13;
     [SerializeField] private float deaAcceleration = 60f;
-    [SerializeField] private float apexBonus = 2;
 
     public void Move(InputAction.CallbackContext context)
     {
