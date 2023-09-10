@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Peeled-Banana.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Peeled-Banana 1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Peeled-Banana.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Peeled-Banana 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="wip: bullet updates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +22,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd32c41764ff48b3b20af005ad7848651b000/0f/fec48238/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca42919df2b74e53b11002749c8755af118a00/b6/9183f798/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scenes/CharacterMovement.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs.meta" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -114,7 +109,7 @@
       <workItem from="1691712700725" duration="2676000" />
       <workItem from="1693866837101" duration="117000" />
       <workItem from="1694135518445" duration="11000" />
-      <workItem from="1694135545570" duration="19396000" />
+      <workItem from="1694135545570" duration="19508000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
@@ -132,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694219314029</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="wip: bullet updates">
+      <option name="closed" value="true" />
+      <created>1694355470110</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1694355470110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +148,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="initial movement code" />
     <MESSAGE value="Update movement system; wip: update jumping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update movement system; wip: update jumping" />
+    <MESSAGE value="wip: bullet updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip: bullet updates" />
   </component>
 </project>
