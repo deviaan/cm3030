@@ -199,12 +199,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.started && _jumpButtonState != JumpButtonState.Pressed)
         {
-            Debug.Log("Button is pressed");
             _jumpButtonState = JumpButtonState.Pressed;
             _lastJumpPressed = Time.time;
         } else if (context.canceled)
         {
-            Debug.Log("Button released");
             _jumpButtonState = JumpButtonState.Released;
         }
     }

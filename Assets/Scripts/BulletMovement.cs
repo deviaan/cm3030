@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour
 {
-    [SerializeField] private float force = 10f;
+    [SerializeField] private float initialForce = 10f;
     public Rigidbody2D rb;
     void Start()
     {
-        rb.velocity = new Vector2(force, 0);
+        var force = new Vector2(initialForce, 0);
+        rb.AddForce(force, ForceMode2D.Impulse);
     }
 }
