@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem/InputSystem.inputsettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem/InputSystem.inputsettings.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem/Player.inputactions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/InputSystem/Player.inputactions.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Peeled-Banana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Peeled-Banana.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem.inputsettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Peeled-Banana 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Peeled-Banana 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.inputactions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.inputactions.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Brute/Brute.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Brute/Brute.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +25,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd32c41764ff48b3b20af005ad7848651b000/0f/fec48238/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca42919df2b74e53b11002749c8755af118a00/b6/9183f798/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Prefabs/Banana.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scenes/CharacterMovement.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
@@ -131,7 +114,7 @@
       <workItem from="1691712700725" duration="2676000" />
       <workItem from="1693866837101" duration="117000" />
       <workItem from="1694135518445" duration="11000" />
-      <workItem from="1694135545570" duration="23601000" />
+      <workItem from="1694135545570" duration="24886000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
@@ -157,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694355470110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial banana shooting">
+      <option name="closed" value="true" />
+      <created>1694389418432</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694389418432</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +162,7 @@
     <MESSAGE value="initial movement code" />
     <MESSAGE value="Update movement system; wip: update jumping" />
     <MESSAGE value="wip: bullet updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="wip: bullet updates" />
+    <MESSAGE value="initial banana shooting" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial banana shooting" />
   </component>
 </project>
