@@ -11,6 +11,7 @@ public class BruteAttack : MonoBehaviour
 	public float shootInterval = 1.5f;
 	public Transform laserSpawnPoint;
 	public GameObject laserPrefab;
+	public AudioSource laserSound;
 
 	// Start is called before the first frame update
 	void Start()
@@ -18,6 +19,7 @@ public class BruteAttack : MonoBehaviour
 		animator = GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		enemyMovement = GetComponent<EnemyMovement>();
+
 	}
 
 	// Update is called once per frame
@@ -42,6 +44,7 @@ public class BruteAttack : MonoBehaviour
 				timer = 0;
 				animator.SetTrigger("Shoot");
 				Instantiate(laserPrefab, laserSpawnPoint.position, laserSpawnPoint.rotation);
+				laserSound.Play();
 			}
 		}
 	}
