@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
+    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="bullet updates">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletCollision.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +26,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd32c41764ff48b3b20af005ad7848651b000/0f/fec48238/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca42919df2b74e53b11002749c8755af118a00/b6/9183f798/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Prefabs/Banana.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scenes/CharacterMovement.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs.meta" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/PlayerMovement.cs.meta" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -49,7 +41,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bullet__collision__with__player&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bullet__collision&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -116,6 +108,10 @@
       <workItem from="1693866837101" duration="117000" />
       <workItem from="1694135518445" duration="11000" />
       <workItem from="1694135545570" duration="24886000" />
+      <workItem from="1694621918345" duration="173000" />
+      <workItem from="1694625350582" duration="116000" />
+      <workItem from="1694625475186" duration="89000" />
+      <workItem from="1694625582488" duration="1646000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
@@ -149,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694389418432</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bullet updates">
+      <option name="closed" value="true" />
+      <created>1694626006299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694626006299</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +168,7 @@
     <MESSAGE value="Update movement system; wip: update jumping" />
     <MESSAGE value="wip: bullet updates" />
     <MESSAGE value="initial banana shooting" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial banana shooting" />
+    <MESSAGE value="bullet updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="bullet updates" />
   </component>
 </project>
