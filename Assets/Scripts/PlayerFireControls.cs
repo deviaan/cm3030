@@ -7,6 +7,12 @@ public class PlayerFireControls : MonoBehaviour
     public void Attack(InputAction.CallbackContext context)
     {
         var transform1 = transform;
-        Instantiate(bullet, transform1.position, transform1.rotation);
+        var position = transform1.position;
+        var pos = new Vector3(
+            position.x + 1,
+            position.y, 
+            position.z
+        );
+        Instantiate(bullet, pos, transform1.rotation);
     }
 }
