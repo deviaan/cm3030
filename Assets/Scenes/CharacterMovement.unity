@@ -488,6 +488,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4580396822706550222, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580396822706550222, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580396822706550222, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5762809319460818180}
+    - target: {fileID: 4580396822706550222, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580396822706550222, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4679106845628493069, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
         type: 3}
       propertyPath: characterBounds.m_Extent.x
@@ -495,3 +520,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34eb4fb4fd3487e4cb31c8169bad9e33, type: 3}
+--- !u!1 &5762809319460818179 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4251357853456666628, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+    type: 3}
+  m_PrefabInstance: {fileID: 5762809319460818178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5762809319460818180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762809319460818179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7acbddc069adb047b4c3b658cf4ed54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 7934810311575263031, guid: e7b3e19e761d33e4f9608472e1d67afd, type: 3}

@@ -152,11 +152,18 @@ MonoBehaviour:
     m_ActionId: 4606ced5-3c2d-43c8-a3d9-8f029444a80f
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bbb1ff43-fcfd-4db3-97f9-17d592ada5f0
-    m_ActionName: Player/Look[/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d14490db-9c45-4f3b-b7dd-23d71bf177e1
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -243,7 +250,6 @@ MonoBehaviour:
   acceleration: 90
   moveClamp: 13
   deaAcceleration: 60
-  apexBonus: 2
   fallClamp: -40
   minFallSpeed: 80
   maxFallSpeed: 120
