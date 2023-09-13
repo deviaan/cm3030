@@ -9,7 +9,7 @@ public class EnemyHealth : MonoBehaviour
 	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
 		Debug.Log(hitInfo.name);
-		if (hitInfo.name == "Bullet(Clone)")
+		if (hitInfo.name == "Banana(Clone)")
 		{
 			hitPoints--;
 			if (hitPoints <= 0)
