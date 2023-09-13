@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 	public int hitPoints = 3;
+	private Animator animator;
 
 	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
@@ -13,8 +14,17 @@ public class EnemyHealth : MonoBehaviour
 			hitPoints--;
 			if (hitPoints <= 0)
 			{
-				Destroy(gameObject);
+				animator.SetTrigger("Death");
+			}
+			else
+			{
+				animator.SetTrigger("Hit");
 			}
 		}
+	}
+
+	void Death()
+	{
+		Destroy(gameObject);
 	}
 }
