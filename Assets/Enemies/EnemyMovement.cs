@@ -12,6 +12,7 @@ public class EnemyMovement : MonoBehaviour
 	private Rigidbody2D rb;
 	private Animator animator;
 
+	// Attack range and visibility range
 	public float attackRange = 1.5f;
 	public float visibilityRange = 10f;
 
@@ -33,17 +34,17 @@ public class EnemyMovement : MonoBehaviour
 		// Get the distance between the player and the enemy
 		Vector3 playerDirection = player.transform.position - transform.position;
 
-		// If the enemy is close enough to the player, follow the player
+		// If the player is within the attack range, stop moving
 		if (playerDirection.magnitude < attackRange)
 		{
-			// TODO: Enable attack
 			Move(Vector3.zero);
 		}
+		// If the player is within the visibility range, move towards the player
 		else if (playerDirection.magnitude < visibilityRange)
 		{
-			// Move the enemy towards the player
 			Move(playerDirection);
 		}
+		// Otherwise, move to the target point
 		else
 		{
 			Vector3 direction = target.position - transform.position;
@@ -61,12 +62,14 @@ public class EnemyMovement : MonoBehaviour
 				}
 			}
 
+			// Move towards the target
 			Move(direction);
 		}
 
+		// Flip to view player if visible
 		if (playerDirection.magnitude < visibilityRange)
 		{
-			// flip to view player at all times if visible
+			// Flip enemy based on direction of player
 			if (playerDirection.x < 0)
 			{
 				transform.localRotation = Quaternion.Euler(0, 180, 0);
@@ -79,24 +82,28 @@ public class EnemyMovement : MonoBehaviour
 
 	}
 
+	// Move the enemy
 	private void Move(Vector3 direction)
 	{
-		// Move the enemy
+		// Create velocity vector
 		rb.velocity = new Vector2(direction.normalized.x * speed, rb.velocity.y);
 
 		// Flip enemy based on direction and set animation
 		if (direction.x < 0)
 		{
+			// Set the walking animation
 			animator.SetBool("isWalking", true);
 			transform.localRotation = Quaternion.Euler(0, 180, 0);
 		}
 		else if (direction.x > 0)
 		{
+			// Set the walking animation
 			animator.SetBool("isWalking", true);
 			transform.localRotation = Quaternion.Euler(0, 0, 0);
 		}
 		else
 		{
+			// Set the walking animation to false if not moving
 			animator.SetBool("isWalking", false);
 		}
 

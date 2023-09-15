@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class Syringe : MonoBehaviour
 {
-	public float speed = 5f;
 	private Rigidbody2D rb;
+
+	// Speed of the syringe
+	public float speed = 5f;
 
 	// Start is called before the first frame update
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
+
+		// Move the syringe in the direction it is facing
 		rb.velocity = transform.right * speed;
 	}
 
 	void OnTriggerEnter2D(Collider2D hitInfo)
 	{
-		Debug.Log(hitInfo.name);
+		// Destroy the syringe on collision
 		Destroy(gameObject);
 	}
 }

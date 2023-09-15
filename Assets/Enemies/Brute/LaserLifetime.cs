@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class LaserLifetime : MonoBehaviour
 {
+	// How long the laser will last
 	public float lifetime = 0.2f;
 
-	// Update is called once per frame
 	void Update()
 	{
+		// Destroy the laser after the lifetime
 		lifetime -= Time.deltaTime;
 		if (lifetime < 0)
 		{
