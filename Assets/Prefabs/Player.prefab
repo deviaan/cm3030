@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5400564263599095631}
   - component: {fileID: 5709724323709447326}
   - component: {fileID: 6039362637715283829}
+  - component: {fileID: 4106903047357415095}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -242,9 +243,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4122c502cfb024bb7e5186dec5814d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4106903047357415095}
+  fireControls: {fileID: 5400564263599095631}
   characterBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.6, y: 0.6, z: 0}
+    m_Extent: {x: 0.65, y: 0.65, z: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -276,7 +279,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 0.3
+  animator: {fileID: 4106903047357415095}
   bullet: {fileID: 7934810311575263031, guid: e7b3e19e761d33e4f9608472e1d67afd, type: 3}
+  nextShot: 0
+  isShooting: 0
 --- !u!114 &5709724323709447326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,3 +317,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &4106903047357415095
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4251357853456666628}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73522b9f79202f34a93a83f13114eef8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

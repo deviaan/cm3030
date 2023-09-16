@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/Door1_0.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/Door1_0.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/Door_Closing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/Door_Closing.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/Door_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/Door_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Door/Door_Opening.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Door/Door_Opening.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/New folder/Door1_0.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/New folder/Door1_0.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Closing.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Closing.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Opening.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/New folder/Door_Opening.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Dead.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Dead.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Hit.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Hit.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Jupming.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Jupming.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Player.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Player/Player.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BulletDuration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_3.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_3.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_9.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet_9.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Banana.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletDuration.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroySelf.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroySelf.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +46,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd32c41764ff48b3b20af005ad7848651b000/0f/fec48238/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca42919df2b74e53b11002749c8755af118a00/b6/9183f798/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Enemies/EnemyDamage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scripts/BulletMovement.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -47,7 +62,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "only__damage__on__attacks",
+    "git-widget-placeholder": "animations",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -121,6 +136,7 @@
       <workItem from="1694631918337" duration="1058000" />
       <workItem from="1694886194079" duration="515000" />
       <workItem from="1694888993075" duration="34000" />
+      <workItem from="1694899627061" duration="5347000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />

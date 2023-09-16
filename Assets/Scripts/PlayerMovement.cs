@@ -7,19 +7,21 @@ using System.Linq;
 using CharacterController;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] public Animator animator;
+    [SerializeField] public PlayerFireControls fireControls;
     private Vector3 Velocity { get; set; }
-    public bool JumpingThisFrame { get; private set; }
-    public bool LandingThisFrame { get; private set; }
     private Vector3 RawMovement { get; set; }
 
     private Vector3 _lastPosition;
     private float _currentHorizontalSpeed, _currentVerticalSpeed;
     private float _xMovement = 0;
     private JumpButtonState _jumpButtonState = JumpButtonState.Neutral;
+
+    private bool _isFacingRight = true;
+    private float _horizontalMovement;
     
     void Update()
     {
@@ -31,6 +33,18 @@ public class PlayerMovement : MonoBehaviour
         CalculateGravity();
         CalculateJump();
         UpdateCharacterPosition();
+
+        if ((!_isFacingRight && _horizontalMovement > 0f) || (_isFacingRight && _horizontalMovement < 0f))
+        {
+            Flip();
+        }
+        animator.SetFloat("Speed", Mathf.Abs(_horizontalMovement));
+
+        if (fireControls.isShooting && Time.time > fireControls.nextShot)
+        {
+            fireControls.ToggleFiring();
+            animator.SetBool("IsShooting", false);
+        }
     }
     
     #region collision
@@ -79,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
             case false when groundCheck:
                 // Reset "coyote time" when ground is first touched again
                 _coyoteUsable = true;
+                animator.SetBool("IsJumping", false);
                 break;
         }
 
@@ -116,10 +131,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void CalculateMove()
     {
-        var horizontalMovement = _xMovement;
-        if (horizontalMovement != 0)
+        _horizontalMovement = _xMovement;
+        if (_horizontalMovement != 0)
         {
-            _currentHorizontalSpeed += horizontalMovement * acceleration * Time.deltaTime;
+            _currentHorizontalSpeed += _horizontalMovement * acceleration * Time.deltaTime;
             // Clamp speed
             _currentHorizontalSpeed = Mathf.Clamp(_currentHorizontalSpeed, -moveClamp, moveClamp);
         }
@@ -136,6 +151,15 @@ public class PlayerMovement : MonoBehaviour
         {
             _currentHorizontalSpeed = 0;
         }
+    }
+
+    private void Flip()
+    {
+        _isFacingRight = !_isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
+        fireControls.Flip();
     }
     
     #endregion
@@ -201,6 +225,7 @@ public class PlayerMovement : MonoBehaviour
         {
             _jumpButtonState = JumpButtonState.Pressed;
             _lastJumpPressed = Time.time;
+            animator.SetBool("IsJumping", true);
         } else if (context.canceled)
         {
             _jumpButtonState = JumpButtonState.Released;
@@ -215,11 +240,6 @@ public class PlayerMovement : MonoBehaviour
             _endedJumpEarly = false;
             _coyoteUsable = false;
             _timeLeftGrounded = float.MinValue;
-            JumpingThisFrame = true;
-        }
-        else
-        {
-            JumpingThisFrame = false;
         }
         
         // End jump early
