@@ -33,16 +33,17 @@ public class EnemyMovement : MonoBehaviour
 	{
 		// Get the distance between the player and the enemy
 		Vector3 playerDirection = player.transform.position - transform.position;
+		Vector3 newDirection = Vector3.zero;
 
 		// If the player is within the attack range, stop moving
 		if (playerDirection.magnitude < attackRange)
 		{
-			Move(Vector3.zero);
+			newDirection = Vector3.zero;
 		}
 		// If the player is within the visibility range, move towards the player
 		else if (playerDirection.magnitude < visibilityRange)
 		{
-			Move(playerDirection);
+			newDirection = playerDirection;
 		}
 		// Otherwise, move to the target point
 		else
@@ -63,7 +64,17 @@ public class EnemyMovement : MonoBehaviour
 			}
 
 			// Move towards the target
-			Move(direction);
+			newDirection = direction;
+		}
+
+		// Prevent walking out of bounds
+		if (newDirection.x + transform.position.x < pointA.transform.position.x || transform.position.x + newDirection.x > pointB.transform.position.x)
+		{
+			Move(Vector3.zero);
+		}
+		else
+		{
+			Move(newDirection);
 		}
 
 		// Flip to view player if visible
