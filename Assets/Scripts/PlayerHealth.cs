@@ -9,11 +9,14 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        --playerHealth;
-        if (playerHealth <= 0)
+        if (other.gameObject.CompareTag("Damage"))
         {
-            // Todo: death and hit animations
-            Destroy(gameObject);
+            --playerHealth;
+            if (playerHealth <= 0)
+            {
+                // Todo: death and hit animations
+                Destroy(gameObject);
+            }
         }
     }
 }
