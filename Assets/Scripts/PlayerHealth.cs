@@ -7,7 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] public int playerHealth = 5;
 
-    public void HitPlayer()
+    private void OnTriggerEnter2D(Collider2D other)
     {
         --playerHealth;
         if (playerHealth <= 0)
