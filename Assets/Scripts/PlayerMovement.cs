@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] public Animator animator;
     [SerializeField] public PlayerFireControls fireControls;
+    [SerializeField] public PlayerHealth playerHealth;
     private Vector3 Velocity { get; set; }
     private Vector3 RawMovement { get; set; }
 
@@ -44,6 +45,12 @@ public class PlayerMovement : MonoBehaviour
         {
             fireControls.ToggleFiring();
             animator.SetBool("IsShooting", false);
+        }
+
+        if (playerHealth.wasHit && playerHealth.PlayerCanAct())
+        {
+            playerHealth.ClearHitStun();
+            animator.SetBool("IsHit", false);
         }
     }
     
@@ -126,7 +133,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        _xMovement = context.ReadValue<Vector2>().x;
+        if (playerHealth.PlayerCanAct())
+        {
+            _xMovement = context.ReadValue<Vector2>().x;
+        }
     }
 
     private void CalculateMove()
@@ -221,7 +231,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext context)
     {
-        if (context.started && _jumpButtonState != JumpButtonState.Pressed)
+        if (context.started && _jumpButtonState != JumpButtonState.Pressed && playerHealth.PlayerCanAct())
         {
             _jumpButtonState = JumpButtonState.Pressed;
             _lastJumpPressed = Time.time;
@@ -262,6 +272,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void UpdateCharacterPosition()
     {
+        // Freeze during hitstun
+        if (!playerHealth.PlayerCanAct())
+        {
+            _currentHorizontalSpeed = 0;
+        }
+        
         var pos = transform.position + characterBounds.center;
         RawMovement = new Vector3(_currentHorizontalSpeed, _currentVerticalSpeed);
         var move = RawMovement * Time.deltaTime;

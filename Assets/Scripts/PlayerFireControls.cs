@@ -7,6 +7,7 @@ public class PlayerFireControls : MonoBehaviour
     [SerializeField] public float fireRate = 0.3f;
     [SerializeField] public Animator animator;
     [SerializeField] public float bulletForce = 30.0f;
+    [SerializeField] public PlayerHealth playerHealth;
     public GameObject bullet;
     public float nextShot;
     public bool isShooting = false;
@@ -14,7 +15,7 @@ public class PlayerFireControls : MonoBehaviour
     
     public void Attack(InputAction.CallbackContext context)
     {
-        if (Time.time > nextShot)
+        if (Time.time > nextShot && playerHealth.PlayerCanAct())
         {
             isShooting = true;
             animator.SetBool("IsShooting", true);

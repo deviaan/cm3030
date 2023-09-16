@@ -245,6 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4106903047357415095}
   fireControls: {fileID: 5400564263599095631}
+  playerHealth: {fileID: 5709724323709447326}
   characterBounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.65, y: 0.65, z: 0}
@@ -280,6 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.3
   animator: {fileID: 4106903047357415095}
+  bulletForce: 30
   bullet: {fileID: 7934810311575263031, guid: e7b3e19e761d33e4f9608472e1d67afd, type: 3}
   nextShot: 0
   isShooting: 0
@@ -296,6 +298,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 5
+  animator: {fileID: 4106903047357415095}
+  _wasHit: 0
 --- !u!50 &6039362637715283829
 Rigidbody2D:
   serializedVersion: 4
