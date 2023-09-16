@@ -1,0 +1,51 @@
+Index: Assets/Tiles/Floor Tiles.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fileFormatVersion: 2\r\nguid: d42ffe21a8cdd1e4e87dee45b66db305\r\nfolderAsset: yes\r\nDefaultImporter:\r\n  externalObjects: {}\r\n  userData: \r\n  assetBundleName: \r\n  assetBundleVariant: \r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Tiles/Floor Tiles.meta b/Assets/Tiles/Floor Tiles.meta
+--- a/Assets/Tiles/Floor Tiles.meta	(revision c552ceb22d3da0bd6d41cf4e5c6da46fb0a1803c)
++++ b/Assets/Tiles/Floor Tiles.meta	(date 1694630921076)
+@@ -1,5 +1,5 @@
+ fileFormatVersion: 2
+-guid: d42ffe21a8cdd1e4e87dee45b66db305
++guid: b8e9c41feb29662478d24ae1faa9d56f
+ folderAsset: yes
+ DefaultImporter:
+   externalObjects: {}
+Index: Assets/Scenes/Tutorial.unity.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fileFormatVersion: 2\r\nguid: 2cda990e2423bbf4892e6590ba056729\r\nDefaultImporter:\r\n  externalObjects: {}\r\n  userData: \r\n  assetBundleName: \r\n  assetBundleVariant: \r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/Tutorial.unity.meta b/Assets/Scenes/Tutorial.unity.meta
+--- a/Assets/Scenes/Tutorial.unity.meta	(revision c552ceb22d3da0bd6d41cf4e5c6da46fb0a1803c)
++++ b/Assets/Scenes/Tutorial.unity.meta	(date 1694630921075)
+@@ -1,5 +1,5 @@
+ fileFormatVersion: 2
+-guid: 2cda990e2423bbf4892e6590ba056729
++guid: 1f63b1aed2dbfa946ac9119421089fe3
+ DefaultImporter:
+   externalObjects: {}
+   userData: 
+Index: Assets/Tiles/Tile Palette.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>fileFormatVersion: 2\r\nguid: d42ffe21a8cdd1e4e87dee45b66db305\r\nfolderAsset: yes\r\nDefaultImporter:\r\n  externalObjects: {}\r\n  userData: \r\n  assetBundleName: \r\n  assetBundleVariant: \r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Tiles/Tile Palette.meta b/Assets/Tiles/Tile Palette.meta
+--- a/Assets/Tiles/Tile Palette.meta	(revision c552ceb22d3da0bd6d41cf4e5c6da46fb0a1803c)
++++ b/Assets/Tiles/Tile Palette.meta	(date 1694630921076)
+@@ -1,5 +1,5 @@
+ fileFormatVersion: 2
+-guid: d42ffe21a8cdd1e4e87dee45b66db305
++guid: 0242c1a59150e9a47b51f459c332e157
+ folderAsset: yes
+ DefaultImporter:
+   externalObjects: {}
