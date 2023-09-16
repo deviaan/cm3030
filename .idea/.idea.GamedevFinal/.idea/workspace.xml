@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +109,7 @@
       <workItem from="1694625475186" duration="89000" />
       <workItem from="1694625582488" duration="1646000" />
       <workItem from="1694631918337" duration="1058000" />
-      <workItem from="1694886194079" duration="451000" />
+      <workItem from="1694886194079" duration="515000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
