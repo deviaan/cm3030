@@ -2,25 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : MonoBehaviour
+public class GruntAttack : MonoBehaviour
 {
 	private Animator animator;
 	private EnemyMovement enemyMovement;
 	private GameObject player;
 
-	// Start is called before the first frame update
 	void Start()
 	{
+		// Get the components
 		animator = GetComponent<Animator>();
 		player = GameObject.FindGameObjectWithTag("Player");
 		enemyMovement = GetComponent<EnemyMovement>();
 	}
 
-	// Update is called once per frame
 	void Update()
 	{
+		// Get the distance between the player and the enemy
 		Vector3 playerDirection = player.transform.position - transform.position;
 
+		// If the player is within the attack range, start attacking
 		if (playerDirection.magnitude < enemyMovement.attackRange)
 		{
 			animator.SetBool("isAttacking", true);
