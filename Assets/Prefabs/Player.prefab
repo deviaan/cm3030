@@ -255,13 +255,13 @@ MonoBehaviour:
   detectorCount: 3
   detectionRayLength: 0.1
   rayBuffer: 0.1
-  acceleration: 90
+  acceleration: 30
   moveClamp: 13
   deaAcceleration: 60
   fallClamp: -40
   minFallSpeed: 80
   maxFallSpeed: 120
-  jumpHeight: 30
+  jumpHeight: 25
   jumpApexThreshold: 10
   coyoteTimeThreshold: 0.1
   jumpBuffer: 0.1
