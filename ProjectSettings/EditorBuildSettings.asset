@@ -6,9 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< Updated upstream
+    path: Assets/Scenes/MainMenu.unity
+    guid: 35ce7509d3eb408489275e91dff3b98d
+  - enabled: 1
     path: Assets/Scenes/Tutorial.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 96c5c2ced63861440968fa33987674c0
   - enabled: 1
     path: Assets/Scenes/Stage 1.unity
     guid: 30a4c9ec17e9a6f459c6de0672c16938
@@ -24,4 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Boss Room.unity
     guid: df8808ac3b8467b4f9f84cd39940d2dc
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: 46d0ded3e33b15048bc87e7c54c03194
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: ee313b299f6be014e979f37dc5d13f9a,
+      type: 2}
