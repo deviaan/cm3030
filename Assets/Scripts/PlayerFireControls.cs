@@ -8,6 +8,7 @@ public class PlayerFireControls : MonoBehaviour
     [SerializeField] public Animator animator;
     [SerializeField] public float bulletForce = 30.0f;
     [SerializeField] public PlayerHealth playerHealth;
+    [SerializeField] public AudioSource splatSoundEffect;
     public GameObject bullet;
     public float nextShot;
     public bool isShooting = false;
@@ -19,6 +20,7 @@ public class PlayerFireControls : MonoBehaviour
         {
             isShooting = true;
             animator.SetBool("IsShooting", true);
+            splatSoundEffect.Play();
             CreateBullet();
             nextShot = Time.time + fireRate;
         }

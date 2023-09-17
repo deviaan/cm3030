@@ -31,66 +31,75 @@ public class EnemyMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		// Get the distance between the player and the enemy
-		Vector3 playerDirection = player.transform.position - transform.position;
-		Vector3 newDirection = Vector3.zero;
-
-		// If the player is within the attack range, stop moving
-		if (playerDirection.magnitude < attackRange)
+		if (!player)
 		{
-			newDirection = Vector3.zero;
-		}
-		// If the player is within the visibility range, move towards the player
-		else if (playerDirection.magnitude < visibilityRange)
-		{
-			newDirection = playerDirection;
-		}
-		// Otherwise, move to the target point
-		else
-		{
-			Vector3 direction = target.position - transform.position;
-
-			// If the enemy is close enough to the target, switch targets
-			if (direction.magnitude < 0.5f)
-			{
-				if (target == pointA.transform)
-				{
-					target = pointB.transform;
-				}
-				else
-				{
-					target = pointA.transform;
-				}
-			}
-
-			// Move towards the target
-			newDirection = direction;
-		}
-
-		// Prevent walking out of bounds
-		if (newDirection.x + transform.position.x < pointA.transform.position.x || transform.position.x + newDirection.x > pointB.transform.position.x)
-		{
-			Move(Vector3.zero);
+			player = GameObject.FindGameObjectWithTag("Player");
 		}
 		else
 		{
-			Move(newDirection);
-		}
 
-		// Flip to view player if visible
-		if (playerDirection.magnitude < visibilityRange)
-		{
-			// Flip enemy based on direction of player
-			if (playerDirection.x < 0)
-			{
-				transform.localRotation = Quaternion.Euler(0, 180, 0);
-			}
-			else if (playerDirection.x > 0)
-			{
-				transform.localRotation = Quaternion.Euler(0, 0, 0);
-			}
-		}
+			// Get the distance between the player and the enemy
+			Vector3 playerDirection = player.transform.position - transform.position;
+			Vector3 newDirection = Vector3.zero;
 
+			// If the player is within the attack range, stop moving
+			if (playerDirection.magnitude < attackRange)
+			{
+				newDirection = Vector3.zero;
+			}
+			// If the player is within the visibility range, move towards the player
+			else if (playerDirection.magnitude < visibilityRange)
+			{
+				newDirection = playerDirection;
+			}
+			// Otherwise, move to the target point
+			else
+			{
+				Vector3 direction = target.position - transform.position;
+
+				// If the enemy is close enough to the target, switch targets
+				if (direction.magnitude < 0.5f)
+				{
+					if (target == pointA.transform)
+					{
+						target = pointB.transform;
+					}
+					else
+					{
+						target = pointA.transform;
+					}
+				}
+
+				// Move towards the target
+				newDirection = direction;
+			}
+
+			// Prevent walking out of bounds
+			if (newDirection.x + transform.position.x < pointA.transform.position.x ||
+			    transform.position.x + newDirection.x > pointB.transform.position.x)
+			{
+				Move(Vector3.zero);
+			}
+			else
+			{
+				Move(newDirection);
+			}
+
+			// Flip to view player if visible
+			if (playerDirection.magnitude < visibilityRange)
+			{
+				// Flip enemy based on direction of player
+				if (playerDirection.x < 0)
+				{
+					transform.localRotation = Quaternion.Euler(0, 180, 0);
+				}
+				else if (playerDirection.x > 0)
+				{
+					transform.localRotation = Quaternion.Euler(0, 0, 0);
+				}
+			}
+
+		}
 	}
 
 	// Move the enemy

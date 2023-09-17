@@ -8,6 +8,7 @@ public class TurretAttack : MonoBehaviour
 	private GameObject player;
 	private Animator animator;
 	private EnemyMovement enemyMovement;
+	[SerializeField] public AudioSource fireSound;
 
 	// The time since the last shot
 	float timer;
@@ -26,30 +27,40 @@ public class TurretAttack : MonoBehaviour
 
 	void Update()
 	{
-		// Get the distance between the player and the enemy
-		Vector3 playerDirection = player.transform.position - transform.position;
-
-		// If the player is within the attack range, start attacking
-		if (playerDirection.magnitude < enemyMovement.attackRange)
+		if (!player)
 		{
-			// Add the time since Update was last called to the timer
-			timer += Time.deltaTime;
-
-			// If the timer exceeds the shoot interval, shoot
-			if (timer > shootInterval)
+			player = GameObject.FindGameObjectWithTag("Player");
+		}
+		else
+		{
+			// Get the distance between the player and the enemy
+			Vector3 playerDirection = player.transform.position - transform.position;
+			
+			// If the player is within the attack range, start attacking
+			if (Mathf.Abs(playerDirection.y) < 3 && Mathf.Abs(playerDirection.x) < enemyMovement.attackRange)
 			{
-				timer = 0;
-				Shoot();
+				// Add the time since Update was last called to the timer
+				timer += Time.deltaTime;
+
+				// If the timer exceeds the shoot interval, shoot
+				if (timer > shootInterval)
+				{
+					timer = 0;
+					Shoot();
+				}
 			}
 		}
-	}
 
-	void Shoot()
-	{
-		// Play the shoot animation
-		animator.SetTrigger("Shoot");
+		void Shoot()
+		{
+			// Play the shoot animation
+			animator.SetTrigger("Shoot");
+			
+			// Play the sound
+			fireSound.Play();
 
-		// Instantiate the syringe prefab at the spawn point
-		Instantiate(syringePrefab, syringeSpawnPoint.position, syringeSpawnPoint.rotation);
+			// Instantiate the syringe prefab at the spawn point
+			Instantiate(syringePrefab, syringeSpawnPoint.position, syringeSpawnPoint.rotation);
+		}
 	}
 }

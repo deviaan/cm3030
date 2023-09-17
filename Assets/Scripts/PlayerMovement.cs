@@ -7,6 +7,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using PlayerExtras;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -129,7 +130,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("WALKING")] [SerializeField] private float acceleration = 90;
     [SerializeField] private float moveClamp = 13;
-    [SerializeField] private float deaAcceleration = 60f;
+    [SerializeField] private float deceleration = 60f;
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -152,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // Slow down character
             _currentHorizontalSpeed = Mathf.MoveTowards(
-                _currentHorizontalSpeed, 0, deaAcceleration * Time.deltaTime
+                _currentHorizontalSpeed, 0, deceleration * Time.deltaTime
                 );
         }
         
@@ -276,6 +277,7 @@ public class PlayerMovement : MonoBehaviour
         if (!playerHealth.PlayerCanAct())
         {
             _currentHorizontalSpeed = 0;
+            _xMovement = 0;
         }
         
         var pos = transform.position + characterBounds.center;
