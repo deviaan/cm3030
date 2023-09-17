@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
 	// Enemy health as number of hits by a banana
+	[SerializeField] public AudioSource deathSound;
 	public int hitPoints = 3;
 	private Animator animator;
 
@@ -24,7 +25,8 @@ public class EnemyHealth : MonoBehaviour
 			// If 0 or less, enemy dies
 			if (hitPoints == 0)
 			{
-				// Play death animation which calls Death() at the end
+				// Play death animation and sound which calls Death() at the end
+				deathSound.Play();
 				animator.SetTrigger("Death");
 
 				// Disable enemy movement and freeze on death
