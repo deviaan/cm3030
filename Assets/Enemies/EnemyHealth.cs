@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
 			hitPoints--;
 
 			// If 0 or less, enemy dies
-			if (hitPoints <= 0)
+			if (hitPoints == 0)
 			{
 				// Play death animation which calls Death() at the end
 				animator.SetTrigger("Death");
@@ -35,9 +35,12 @@ public class EnemyHealth : MonoBehaviour
 				GetComponent<BruteAttack>().enabled = false;
 				GetComponent<TurretAttack>().enabled = false;
 				GetComponent<GruntAttack>().enabled = false;
+
+				// Disable collider on death
+				this.enabled = false;
 			}
 			// If more than 0, enemy hit
-			else
+			else if (hitPoints > 0)
 			{
 				// Play hit animation
 				animator.SetTrigger("Hit");
