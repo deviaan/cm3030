@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] public float invulnerability = 2.0f;
     [SerializeField] public AudioSource ouchSoundEffect;
     [SerializeField] public AudioSource deadSoundEffect;
+    [SerializeField] public AudioSource pieSoundEffect;
     private bool _isDead = false;
     public bool wasHit = false;
     public float hitStunClear;
@@ -20,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
             PlayerWasHit();
         } else if (other.gameObject.CompareTag("Health"))
         {
+            pieSoundEffect.Play();
             ++playerHealth;
             Destroy(other.gameObject);
         }

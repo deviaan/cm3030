@@ -352,7 +352,7 @@ MonoBehaviour:
   speed: 2.5
   pointA: {fileID: 1668399305201420826}
   pointB: {fileID: 3514950277320350335}
-  attackRange: 5
+  attackRange: 15
   visibilityRange: 10
 --- !u!50 &6876961124987763018
 Rigidbody2D:
@@ -410,7 +410,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 581478241763707326, guid: 1928a4359c4204f26b5fc1f1514368fe,
     type: 3}
   laserSound: {fileID: 6820251239200150329}
-  shootInterval: 5
+  shootInterval: 3
 --- !u!114 &6481975082238275725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSound: {fileID: 2170625976614861481}
-  hitPoints: 3
+  hitPoints: 15
 --- !u!61 &4366092360954797820
 BoxCollider2D:
   m_ObjectHideFlags: 0

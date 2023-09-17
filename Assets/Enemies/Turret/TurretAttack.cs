@@ -8,6 +8,7 @@ public class TurretAttack : MonoBehaviour
 	private GameObject player;
 	private Animator animator;
 	private EnemyMovement enemyMovement;
+	[SerializeField] public AudioSource fireSound;
 
 	// The time since the last shot
 	float timer;
@@ -54,6 +55,9 @@ public class TurretAttack : MonoBehaviour
 		{
 			// Play the shoot animation
 			animator.SetTrigger("Shoot");
+			
+			// Play the sound
+			fireSound.Play();
 
 			// Instantiate the syringe prefab at the spawn point
 			Instantiate(syringePrefab, syringeSpawnPoint.position, syringeSpawnPoint.rotation);
