@@ -6,21 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="hit stun">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Dead.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Dead.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Hit.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Hit.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Idle.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Idle.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Jupming.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Jupming.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Player.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Player.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Running.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Running.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Shooting.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Shooting.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawn.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawn.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PauseMenu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PauseMenu/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +120,7 @@
       <workItem from="1694907726191" duration="1871000" />
       <workItem from="1694965605659" duration="427000" />
       <workItem from="1694967036422" duration="6423000" />
-      <workItem from="1694984555028" duration="5710000" />
+      <workItem from="1694984555028" duration="6526000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
