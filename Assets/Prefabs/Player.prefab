@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 4251357853456666628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -248,20 +248,20 @@ MonoBehaviour:
   playerHealth: {fileID: 5709724323709447326}
   characterBounds:
     m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.65, y: 0.65, z: 0}
+    m_Extent: {x: 0, y: 0.4, z: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
   detectorCount: 3
   detectionRayLength: 0.1
   rayBuffer: 0.1
-  acceleration: 90
+  acceleration: 30
   moveClamp: 13
   deaAcceleration: 60
   fallClamp: -40
   minFallSpeed: 80
   maxFallSpeed: 120
-  jumpHeight: 30
+  jumpHeight: 25
   jumpApexThreshold: 10
   coyoteTimeThreshold: 0.1
   jumpBuffer: 0.1
@@ -282,6 +282,7 @@ MonoBehaviour:
   fireRate: 0.3
   animator: {fileID: 4106903047357415095}
   bulletForce: 30
+  playerHealth: {fileID: 0}
   bullet: {fileID: 7934810311575263031, guid: e7b3e19e761d33e4f9608472e1d67afd, type: 3}
   nextShot: 0
   isShooting: 0
@@ -299,7 +300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 5
   animator: {fileID: 4106903047357415095}
-  _wasHit: 0
+  hitStun: 1
+  wasHit: 0
+  hitStunClear: 0
 --- !u!50 &6039362637715283829
 Rigidbody2D:
   serializedVersion: 4
