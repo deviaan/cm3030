@@ -34,9 +34,13 @@ public class EnemyHealth : MonoBehaviour
 				GetComponent<EnemyMovement>().enabled = false;
 
 				// Disable enemy attack on death (if applicable)
-				GetComponent<BruteAttack>().enabled = false;
-				GetComponent<TurretAttack>().enabled = false;
-				GetComponent<GruntAttack>().enabled = false;
+				var bruteAttack = GetComponent<BruteAttack>();
+				var turretAttack = GetComponent<TurretAttack>();
+				var gruntAttack = GetComponent<GruntAttack>();
+
+				if (bruteAttack) bruteAttack.enabled = false;
+				if (turretAttack) turretAttack.enabled = false;
+				if (gruntAttack) gruntAttack.enabled = false;
 
 				// Disable collider on death
 				this.enabled = false;
