@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="">
+    <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="hit stun">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/Hit.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Hit.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Player/Dead.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Dead.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/New Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CharacterMovement.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +27,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd32c41764ff48b3b20af005ad7848651b000/0f/fec48238/Physics2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ca42919df2b74e53b11002749c8755af118a00/b6/9183f798/Vector2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scenes/CharacterMovement.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/devia/Documents/Unity/GamedevFinal/Assets/Scenes/CharacterMovement.unity" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -121,7 +119,7 @@
       <workItem from="1694886194079" duration="515000" />
       <workItem from="1694888993075" duration="34000" />
       <workItem from="1694899627061" duration="6927000" />
-      <workItem from="1694907726191" duration="515000" />
+      <workItem from="1694907726191" duration="1871000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
@@ -171,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694906069484</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hit stun">
+      <option name="closed" value="true" />
+      <created>1694908350215</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694908350215</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +194,7 @@
     <MESSAGE value="initial banana shooting" />
     <MESSAGE value="bullet updates" />
     <MESSAGE value="animations; bug with bullet dirction" />
-    <option name="LAST_COMMIT_MESSAGE" value="animations; bug with bullet dirction" />
+    <MESSAGE value="hit stun" />
+    <option name="LAST_COMMIT_MESSAGE" value="hit stun" />
   </component>
 </project>

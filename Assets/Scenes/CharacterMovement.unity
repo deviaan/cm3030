@@ -434,6 +434,11 @@ PrefabInstance:
       propertyPath: hitStun
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5709724323709447326, guid: 34eb4fb4fd3487e4cb31c8169bad9e33,
+        type: 3}
+      propertyPath: playerHealth
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34eb4fb4fd3487e4cb31c8169bad9e33, type: 3}
 --- !u!114 &1495314363 stripped

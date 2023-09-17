@@ -21,6 +21,8 @@ public class PlayerHealth : MonoBehaviour
             if (playerHealth <= 0)
             {
                 _isDead = true;
+                animator.SetBool("IsDead", true);
+                Destroy(gameObject, 2);
             }
             else
             {
@@ -38,6 +40,6 @@ public class PlayerHealth : MonoBehaviour
 
     public bool PlayerCanAct()
     {
-        return Time.time > hitStunClear;
+        return !_isDead && Time.time > hitStunClear;
     }
 }
