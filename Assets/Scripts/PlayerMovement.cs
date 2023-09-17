@@ -4,9 +4,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CharacterController;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using PlayerExtras;
 
 public class PlayerMovement : MonoBehaviour
 {
