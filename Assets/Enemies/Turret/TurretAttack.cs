@@ -34,9 +34,9 @@ public class TurretAttack : MonoBehaviour
 		{
 			// Get the distance between the player and the enemy
 			Vector3 playerDirection = player.transform.position - transform.position;
-
+			
 			// If the player is within the attack range, start attacking
-			if (playerDirection.magnitude < enemyMovement.attackRange)
+			if (Mathf.Abs(playerDirection.y) < 3 && Mathf.Abs(playerDirection.x) < enemyMovement.attackRange)
 			{
 				// Add the time since Update was last called to the timer
 				timer += Time.deltaTime;

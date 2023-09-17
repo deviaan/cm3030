@@ -5,39 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9edb5adc-5282-497c-882c-231739ddb1c9" name="Changes" comment="hit stun">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawn.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamedevFinal/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Brute/Brute.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Brute/Brute.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Brute/BruteAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Brute/BruteAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/EnemyMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/EnemyMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Grunt/Grunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Grunt/Grunt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemies/Grunt/GruntAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Grunt/GruntAttack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/Turret/Turret.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Turret/Turret.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemies/Turret/TurretAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemies/Turret/TurretAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Player/ClownSpriteSheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PieLemon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PieLemon.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PieLemon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PieLemon.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayerSpawn.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Boss Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Boss Room.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MiniBoss Room.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MiniBoss Room.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Stage 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Stage 3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts 1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerFireControls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/key_32x32_24f.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/key_32x32_24f.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +119,7 @@
       <workItem from="1694899627061" duration="6927000" />
       <workItem from="1694907726191" duration="1871000" />
       <workItem from="1694965605659" duration="427000" />
-      <workItem from="1694967036422" duration="4092000" />
+      <workItem from="1694967036422" duration="5425000" />
     </task>
     <task id="LOCAL-00001" summary="initial movement code">
       <option name="closed" value="true" />
